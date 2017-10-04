@@ -3,7 +3,7 @@ import sys
 for i in sys.stdin:
     # input of i-inputs
 
-    if i.rstrip() == '0':
+    if i == '0\n':
         # reched the end break the loop
         break
     menu = dict()
