@@ -27,6 +27,6 @@ for i in sys.stdin:
     for key, value in sorted(menu.items()):
         # for every sorted key
         # print out ordered keys with sorted values as string
-        print(key, ' '.join(sorted(menu[key])) + ' ')
+        print(key, ' '.join(sorted(menu[key])))
 
     print()  # print empty line
