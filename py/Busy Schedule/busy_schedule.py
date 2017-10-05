@@ -1,32 +1,38 @@
-from datetime import datetime as dt
-import sys
-## current cpu time 0.08
-# needs to be improved
+all_times = []
 
-end = []  # print all the times
-for i in sys.stdin:
+#cpu time 0.3s
+while True:
+    i = input()
 
-    if i == '0\n':
-        for j in range(1, len(end)):
-            # for every item in the list end
-            if j == len(end)-1:
-                print(end[j].replace('AM', 'a.m.').replace('PM', 'p.m.'), end="")
+    if i == '0':
+        # let's end with the final output
+
+        for j in range(len(all_times) + 1):
+            # for every current time in the current range
+
+            if j == len(all_times)-1:
+                hours, minutes, ampm = all_times[j]
+                print(hours[0].replace('0', '12') + ":" + minutes if len(hours) == 1 else hours + ":" + minutes, ampm, end="")
                 break
-            print(end[j].replace('AM', 'a.m.').replace('PM', 'p.m.') + '\n' if end[j] != '\n' else '\n', end="")
+            if not all_times:
+                # breal of empty
+                break
+            if all_times[j] == '\n':
+                print()
+            else:
+                hours, minutes, ampm = all_times[j]
+                print(hours[0].replace('0', '12') + ":" + minutes if len(hours) == 1 else hours + ":" + minutes, ampm,)
         break
 
-    times = []  # list of times
-    end += '\n'
+    current_times = []
+    if all_times:
+        all_times.append('\n')
 
     for _ in range(int(i)):
-        # convert the times into 24 hour time format
-
+        # for our current input range add times to times list
         time = input()
-        # if it ends with a.m. change the part to AM; p.m. to PM
-        if time[-4:] == 'a.m.':
-            times.append(dt.strptime(time[:-4] + 'AM', '%I:%M %p'))
-        else:
-            times.append(dt.strptime(time[:-4] + 'PM', '%I:%M %p'))
-
-    times.sort()
-    end += [dt.strftime(current, '%I:%M %p').lstrip("0") for current in times]
+        time = time[:2].replace('12', '0') + time[2:]  # try to replace the 12 with 0
+        time = time.split()
+        current_times += [time[0].split(':') + [time[1]]]  # append the current time to current_times
+    current_times.sort(key=lambda x: (x[2], int(x[0]), int(x[1])))  # sort all_times by am/pm, hours, minutes
+    all_times += current_times
