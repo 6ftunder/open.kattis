@@ -1,32 +1,26 @@
 all_times = []
 
-#cpu time 0.3s
+#cpu time 0.03s
 while True:
     i = input()
 
     if i == '0':
         # let's end with the final output
 
-        for j in range(len(all_times) + 1):
-            # for every current time in the current range
+        for hour, minute, ampm in all_times[:-1]:
+            # for every time in all times, except the last
+            hour = hour[0].replace('0', '12') if len(hour) == 1 else hour
+            print('{}:{} {}'.format(hour, minute, ampm) if hour else '')
 
-            if j == len(all_times)-1:
-                hours, minutes, ampm = all_times[j]
-                print(hours[0].replace('0', '12') + ":" + minutes if len(hours) == 1 else hours + ":" + minutes, ampm, end="")
-                break
-            if not all_times:
-                # breal of empty
-                break
-            if all_times[j] == '\n':
-                print()
-            else:
-                hours, minutes, ampm = all_times[j]
-                print(hours[0].replace('0', '12') + ":" + minutes if len(hours) == 1 else hours + ":" + minutes, ampm,)
+        hour, minute, ampm = all_times[-1]
+        hour = hour[0].replace('0', '12') if len(hour) == 1 else hour
+        print('{}:{} {}'.format(hour, minute, ampm), end="")
         break
 
     current_times = []
     if all_times:
-        all_times.append('\n')
+        # empty line in our print
+        all_times.append(['', '', ''])
 
     for _ in range(int(i)):
         # for our current input range add times to times list
