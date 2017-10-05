@@ -1,6 +1,6 @@
 import sys
 
-# cpu time 0.2s
+# cpu time 0.02s
 for i in sys.stdin:
     for j in sys.stdin:
         # splitting the input at ' ' and converting input into int if it's a digit else str
