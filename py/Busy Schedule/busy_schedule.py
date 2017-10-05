@@ -1,6 +1,6 @@
-all_times = []
-
 #cpu time 0.03s
+
+all_times = []
 while True:
     i = input()
 
