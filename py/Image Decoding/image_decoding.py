@@ -18,6 +18,7 @@ while True:
         break
 
     if first:
+        print(end="")  # since we have to do I/O, we output holder empty string with no new line
         first = not first
     else:
         print()
