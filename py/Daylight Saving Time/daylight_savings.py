@@ -5,7 +5,7 @@ for i in sys.stdin:
     for j in sys.stdin:
         # splitting the input at ' ' and converting input into int if it's a digit else str
         forwards_backwards, change, hour, minute = map(
-            lambda x: int(x) if x.isdigit() else str(x), j.split())
+            lambda x: int(x) if x.isdigit() else x, j.split())
 
         # time added together in minutes, added or removed change in minutes
         time_in_minutes = ((hour * 60) + minute) + \
