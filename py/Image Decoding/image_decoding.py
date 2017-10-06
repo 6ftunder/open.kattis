@@ -1,9 +1,3 @@
-# work in progress,
-# working version will be merged
-# to master branch
-#
-#
-#
 def first_line(line):
     # get the first input and set the needed length of lines
     pixel, number_of_outputs = line[0], line[1:]
