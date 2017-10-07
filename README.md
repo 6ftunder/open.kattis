@@ -8,6 +8,6 @@
 
 |Problem   |Language   |Points   |
 |---|---|---|
-| [Aaah!](https://open.kattis.com/problems/aaah)  | Python 3  | [1.4](https://github.com/6ftunder/open.kattis/tree/master/py/Aaah!)  |
+| [Aaah!](https://open.kattis.com/problems/aaah)  | [Python 3](https://github.com/6ftunder/open.kattis/tree/master/py/Aaah!)  | 1.4  |
 | test  | test  | test  |
 | test  |  test | test  |
