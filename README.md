@@ -1,14 +1,13 @@
 # open.kattis
+
     Solutions to open kattis problems at https://open.kattis.com/.
 
     Don't copy paste solutions, instead use them for reference.
 
-# 
+## Solved problem
 
-# Solved problems
-
-|test   | test  | test  |
+|Problem   |Language   |Points   |
 |---|---|---|
-| test  | test  | test  |
+| [Aaah!](https://open.kattis.com/problems/aaah)  | Python 3  | [1.4](https://github.com/6ftunder/open.kattis/tree/master/py/Aaah!)  |
 | test  | test  | test  |
 | test  |  test | test  |
