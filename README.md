@@ -4,7 +4,7 @@
 
     Don't copy paste solutions, instead use them for reference.
 
-## Solved problem
+## Solved problems
 
 |Problem   |Language   |Points   |
 |---|---|---|
