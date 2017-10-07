@@ -3,3 +3,12 @@
 
     Don't copy paste solutions, instead use them for reference.
 
+# 
+
+# Solved problems
+
+|test   | test  | test  |
+|---|---|---|
+| test  | test  | test  |
+| test  | test  | test  |
+| test  |  test | test  |
