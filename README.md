@@ -41,7 +41,7 @@
 |[Simon Says](https://open.kattis.com/problems/simon)|[Python 3](https://github.com/6ftunder/open.kattis/tree/master/py/Simon%20Says%20(id%20simon))|2.0||
 |[Simon Says](https://open.kattis.com/problems/simonsays)|[Python 3](https://github.com/6ftunder/open.kattis/tree/master/py/Simon%20Says%20(id%20simonsays))|1.5||
 |[Simple Addition](https://open.kattis.com/problems/simpleaddition)|[Python 3](https://github.com/6ftunder/open.kattis/tree/master/py/Simple%20Addition)|1.7||
-|[Solving for Carrots](https://open.kattis.com/problems/carrots)|[Python 3]()|1.2||
+|[Solving for Carrots](https://open.kattis.com/problems/carrots)|[Python 3](https://github.com/6ftunder/open.kattis/tree/master/py/Solving%20for%20Carrots)|1.2||
 |[Soylent](https://open.kattis.com/problems/soylent)|[Python 3](https://github.com/6ftunder/open.kattis/tree/master/py/Soylent)|1.5||
 |[Stacking Cups](https://open.kattis.com/problems/cups)|[Python 3](https://github.com/6ftunder/open.kattis/tree/master/py/Stacking%20Cups)|1.4||
 |[Statistics](https://open.kattis.com/problems/statistics)|[Python 3](https://github.com/6ftunder/open.kattis/tree/master/py/Statistics)|1.7||
