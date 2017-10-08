@@ -2,7 +2,7 @@
 
     Below are some of the solutions to open kattis problems at https://open.kattis.com/.
 
-    Don't copy paste solutions, instead use them for reference.
+    Solutions are meant for reference use, not copy pasting.
 
 ## Solved problems
 
